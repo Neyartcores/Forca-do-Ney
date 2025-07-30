@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forca do Ney</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <script defer src="palavras.js"></script>
+  <script defer src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Forca do Ney</h1>
+<p id="dica" style="color: #ffcc00; font-size: 1.1rem; margin-top: -10px;"></p>
+    <div id="dica" style="margin-top: 10px;">Dica: </div>
+    <div id="palavra"></div>
+    <div id="teclado"></div>
+    <div id="forca">
+      <div class="parte cabeça"></div>
+      <div class="parte corpo"></div>
+      <div class="parte bracoE"></div>
+      <div class="parte bracoD"></div>
+      <div class="parte pernaE"></div>
+      <div class="parte pernaD"></div>
+    </div>
+    <div id="chances" style="margin: 10px 0; font-size: 1rem; color: #ffffff;">Chances restantes: 6</div>
+    <div id="mensagem"></div>
+    <button style="padding: 10px 20px; font-size: 1rem; background:#111; border:1px solid #00ffff; color:#00ffff; border-radius:8px; margin-top:20px; cursor:pointer;" onclick="iniciarComPalavraPersonalizada()">🎯 Digite a Palavra</button>
+  </div>
+</body>
+</html>
