@@ -19,7 +19,7 @@ function iniciarJogo() {
   letrasCorretas = [];
   tentativasRestantes = 6;
 
-  document.getElementById('dica').innerText = 'Dica: ' + categoriaAtual;
+  document.getElementById('dica').innerText = 'Dica: ';
   document.getElementById('mensagem').innerText = '';
   document.getElementById('chances').innerText = 'Chances restantes: ' + tentativasRestantes;
   atualizarPalavra();
